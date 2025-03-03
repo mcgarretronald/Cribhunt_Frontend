@@ -10,7 +10,7 @@ export default function Home() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      router.push("/Auth/welcome");
+      router.push("/auth/welcome");
     }, 5000);
     return () => clearTimeout(timer);
   }, [router]);

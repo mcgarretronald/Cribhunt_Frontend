@@ -53,7 +53,7 @@ export default function Login() {
       });
   
       const data = await res.json();
-      console.log("Response Data:", data); // Debugging: Log API response
+      console.log("Response Data:", data); 
   
       if (!res.ok) {
         const errorMessage =
@@ -161,7 +161,7 @@ export default function Login() {
           <button className="flex items-center justify-center space-x-2 bg-[#030F0F] text-white p-2 rounded-md">
             <FaGoogle size={20} />
           </button>
-          <p className="text-sm text-gray-600">Don&apos;t have an account? <Link href="/Auth/register" className="text-[#00C767]">Register</Link></p>
+          <p className="text-sm text-gray-600">Don&apos;t have an account? <Link href="/auth/role" className="text-[#00C767]">Register</Link></p>
         </div>
       </form>
     </div>
